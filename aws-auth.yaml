@@ -17,3 +17,18 @@ metadata:
   name: aws-auth
   namespace: kube-system
   uid: e5d7a03c-3edc-408f-9b2d-fad18532d753
+
+---
+
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  annotations:
+    eks.amazonaws.com/role-arn: arn:aws:iam::180935779261:role/eksctl-expense-addon-iamserviceaccount-expens-Role1-g9KNx0p0EiyZ
+  creationTimestamp: "2026-01-04T12:35:44Z"
+  labels:
+    app.kubernetes.io/managed-by: eksctl
+  name: expense-mysql-secret
+  namespace: expense
+  resourceVersion: "86968"
+  uid: d10053ba-e432-41b5-bea7-8c8b5c428fd7
